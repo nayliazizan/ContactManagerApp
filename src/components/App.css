@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  background-color: #998973;
+  color: white;
+}
+
+.ui.fixed.menu {  /* Target header element using its classes */
+  background-color: #e6eef0;
+}
+
+.ui.card {  /* Target contact card element using its class */
+  background-color: #2d6d7a;
+}
