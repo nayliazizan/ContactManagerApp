@@ -16,9 +16,15 @@ function DeleteConfirm(props) {
                 </div>
             </div>
             <div className="center-div" style={{ display: 'flex', justifyContent: 'center'}}>
-                <h3>Are you sure you want to delete this contact?</h3>
-                <div>
-                    <Link to="/" onClick={() => props.clickHandler(id)}><button className="ui button red center">Yes</button></Link><br/>
+                <div className="item">
+                    <h3>Are you sure you want to delete this contact?</h3>
+                </div>
+                
+            </div>
+            <div className="center-div" style={{ display: 'flex', justifyContent: 'center'}}>
+                
+                <div className="item">
+                    <Link to="/" onClick={() => props.clickHandler(id)}><button className="ui button red center">Yes</button></Link>
                     <Link to="/"><button className="ui button blue center">No</button></Link>
                 </div>
             </div>
