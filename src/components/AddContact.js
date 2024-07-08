@@ -1,5 +1,4 @@
 import React from "react";
-import wbb1 from "../images/wbb1.jpg"
 
 class AddContact extends React.Component {
     //define state (initially)
