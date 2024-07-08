@@ -1,4 +1,5 @@
 import React from "react";
+import wbb1 from "../images/wbb1.jpg"
 
 class AddContact extends React.Component {
     //define state (initially)
@@ -16,12 +17,15 @@ class AddContact extends React.Component {
         }
         this.props.addContactHandler(this.state);
         this.setState({name:"", email:""}) //reset form state afer submit
-        console.log(this.state);
+        ////add this so that after we click add button, 
+        //the page will save the data and direct us to 
+        //contactlist page
+        this.props.history.push("/"); 
     }
 
     render() {
         return (
-            <div className="ui main">
+            <div className="ui main main-content">
                 <h2>Add Contact</h2>
                 <form className="ui form" onSubmit={this.add}>
                     <div className="field">
@@ -44,7 +48,7 @@ class AddContact extends React.Component {
                             onChange={(e)=> this.setState({email: e.target.value})}
                         />
                     </div>
-                    <button className="ui button" style={{backgroundColor: "#384a58", color: "white"}}><i className="plus square icon"></i>Add</button>
+                    <button className="ui button blue" ><i className="plus square icon"></i>Add</button>
                 </form>
             </div>
         );

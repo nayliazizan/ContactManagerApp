@@ -37,15 +37,20 @@
   }
 }
 
+.main-content {
+  margin-top: 80px;
+}
+
+.item {
+  margin: 5px;
+}
+
 body {
-  background-color: #998973;
-  color: white;
+  background-image: url('../images/wbb1.jpg');
+  background-position: center;
+  height: 100%;
 }
 
-.ui.fixed.menu {  /* Target header element using its classes */
-  background-color: #e6eef0;
-}
-
-.ui.card {  /* Target contact card element using its class */
-  background-color: #2d6d7a;
+.item {
+  background: rgba(255, 255, 255, 0.8);
 }
